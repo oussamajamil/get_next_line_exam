@@ -6,7 +6,7 @@
 /*   By: ojamil <ojamil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 09:47:13 by ojamil            #+#    #+#             */
-/*   Updated: 2021/12/09 10:10:39 by ojamil           ###   ########.fr       */
+/*   Updated: 2021/12/25 14:21:37 by ojamil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,6 @@ char *get_line(int fd)
 		if (buffer[0] == '\n')
 		{
 			line = ft_strjoin(line, buffer);
-			free(buffer);
-			return (line);
-		}
-		if (buffer[0] == '\0')
-		{
 			free(buffer);
 			return (line);
 		}
